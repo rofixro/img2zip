@@ -1,0 +1,27 @@
+{
+  "name": "img2zip",
+  "version": "0.0.3",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rslib build",
+    "dev": "rslib build --watch"
+  },
+  "devDependencies": {
+    "@rslib/core": "^0.0.15",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "jszip": "^3.10.1"
+  }
+}
